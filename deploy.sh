@@ -10,7 +10,7 @@ pnpm run docs:build  #然后执行打包命令
 cd docs/.vitepress/dist  #进到dist目录
 
 git init  #执行这些git命令
-git add .
+git add -A
 git commit -m 'deploy'
 
 git push -f git@github.com:evestorm/blogs.git master:gh-pages  #提交到这个分支
