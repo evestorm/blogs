@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from 'vitepress';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -29,7 +29,13 @@ export default defineConfig({
           // { text: 'JavaScript', link: '/frontend/js/JavaScript基础知识' },
         ]
       },
-      // { text: 'Examples', activeMatch: '^/other/', link: '/markdown-examples' }
+      {
+        text: '教程',
+        activeMatch: '^/other/',
+        items: [
+          { text: '搭建VitePress博客', link: '/other/教程/快速搭建VitePress博客并上线GitHubPages' }
+        ]
+      }
     ],
 
     sidebar: {
@@ -72,8 +78,21 @@ export default defineConfig({
             },
           ]
         }
+      ],
+      "other/教程/": [
+        {
+          text: '教程',
+          items: [
+            {
+              text: '快速搭建VitePress博客并上线GitHubPages',
+              link: '/other/教程/快速搭建VitePress博客并上线GitHubPages'
+            },
+          ]
+        }
       ]
     },
+
+    outline: [1, 6],
 
     // sidebar: [
     //   {

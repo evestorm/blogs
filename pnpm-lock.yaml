@@ -5,9 +5,12 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
+  '@types/node':
+    specifier: ^20.2.5
+    version: 20.2.5
   vitepress:
     specifier: 1.0.0-beta.1
-    version: 1.0.0-beta.1(@algolia/client-search@4.17.1)
+    version: 1.0.0-beta.1(@algolia/client-search@4.17.1)(@types/node@20.2.5)
   vue:
     specifier: ^3.3.4
     version: 3.3.4
@@ -392,6 +395,10 @@ packages:
     resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
     dev: true
 
+  /@types/node@20.2.5:
+    resolution: {integrity: sha512-JJulVEQXmiY9Px5axXHeYGLSjhkZEnD+MDPDGbCbIAbMslkKwmygtZFy1X6s/075Yo94sf8GuSlFfPzysQrWZQ==}
+    dev: true
+
   /@types/web-bluetooth@0.0.17:
     resolution: {integrity: sha512-4p9vcSmxAayx72yn70joFoL44c9MO/0+iVEBIQXe3v2h2SiAsEIo/G5v6ObFWvNKRFjbrVadNf9LqEEZeQPzdA==}
     dev: true
@@ -403,7 +410,7 @@ packages:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.3.9
+      vite: 4.3.9(@types/node@20.2.5)
       vue: 3.3.4
     dev: true
 
@@ -721,7 +728,7 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /vite@4.3.9:
+  /vite@4.3.9(@types/node@20.2.5):
     resolution: {integrity: sha512-qsTNZjO9NoJNW7KnOrgYwczm0WctJ8m/yqYAMAK9Lxt4SoySUfS5S8ia9K7JHpa3KEeMfyF8LoJ3c5NeBJy6pg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -746,6 +753,7 @@ packages:
       terser:
         optional: true
     dependencies:
+      '@types/node': 20.2.5
       esbuild: 0.17.19
       postcss: 8.4.24
       rollup: 3.23.0
@@ -753,7 +761,7 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitepress@1.0.0-beta.1(@algolia/client-search@4.17.1):
+  /vitepress@1.0.0-beta.1(@algolia/client-search@4.17.1)(@types/node@20.2.5):
     resolution: {integrity: sha512-V2yyCwQ+v9fh7rbnGDLp8M7vHa9sLElexXf/JHtBOsOwv7ed9wt1QI4WUagYgKR3TeoJT9v2s6f0UaQSne0EvQ==}
     hasBin: true
     dependencies:
@@ -768,7 +776,7 @@ packages:
       mark.js: 8.11.1
       minisearch: 6.1.0
       shiki: 0.14.2
-      vite: 4.3.9
+      vite: 4.3.9(@types/node@20.2.5)
       vue: 3.3.4
     transitivePeerDependencies:
       - '@algolia/client-search'
