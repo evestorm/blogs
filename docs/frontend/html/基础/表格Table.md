@@ -88,4 +88,4 @@
 </html>
 ```
 
-![Table Demo](/images/表格Table/table-demo.png)
+![Table Demo](/assets/表格Table/table-demo.png)
