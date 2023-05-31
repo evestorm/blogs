@@ -1,4 +1,6 @@
 import { defineConfig } from 'vitepress';
+import path from 'path';
+import { autoGetSidebarOptionBySrcDir } from './sidebar';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -40,57 +42,18 @@ export default defineConfig({
 
     // 左侧侧边栏
     sidebar: {
-      "/frontend/html/": [
-        {
-          text: 'HTML',
-          items: [
-            {
-              text: '基础',
-              items: [
-                {
-                  text: '元素',
-                  link: '/frontend/html/基础/元素'
-                },
-                {
-                  text: '表格Table',
-                  link: '/frontend/html/基础/表格Table'
-                }
-              ]
-            },
-          ]
-        }
-      ],
-      "/frontend/css/": [
-        {
-          text: 'CSS',
-          items: [
-            {
-              text: '基础',
-              items: [
-                {
-                  text: 'CSS引入方式',
-                  link: '/frontend/css/基础/CSS引入方式'
-                },
-                {
-                  text: '盒模型',
-                  link: '/frontend/css/基础/盒模型'
-                }
-              ]
-            },
-          ]
-        }
-      ],
-      "other/教程/": [
-        {
-          text: '教程',
-          items: [
-            {
-              text: 'VitePress博客搭建',
-              link: '/other/教程/快速搭建VitePress博客并上线GitHubPages'
-            },
-          ]
-        }
-      ]
+      "/frontend/html/": autoGetSidebarOptionBySrcDir(
+        path.resolve(__dirname, "../frontend/html/"),
+        "HTML"
+      ),
+      "/frontend/css/": autoGetSidebarOptionBySrcDir(
+        path.resolve(__dirname, "../frontend/css/"),
+        "CSS"
+      ),
+      "other/教程/": autoGetSidebarOptionBySrcDir(
+        path.resolve(__dirname, "../other/教程/"),
+        "教程"
+      )
     },
 
     // 右侧文章大纲
