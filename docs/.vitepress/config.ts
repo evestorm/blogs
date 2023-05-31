@@ -8,7 +8,7 @@ export default defineConfig({
   lang: 'zh-CN',
   // head 标签内容追加
   head: [
-    ['link', { rel: 'icon', href: '../images/kitten.jpg' }]
+    ['link', { rel: 'icon', href: '/blogs/kitten.jpg' }]
   ],
   // 使用 git commit 获取时间戳。此选项允许默认主题显示页面的上次更新时间；通过 themeConfig.lastUpdatedText 选项自定义文本
   lastUpdated: true,
@@ -17,7 +17,7 @@ export default defineConfig({
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: '../images/kitten.jpg', // 站点左侧logo
+    logo: '/kitten.jpg', // 站点左侧logo
     nav: [
       { text: '首页', link: '/' },
       {

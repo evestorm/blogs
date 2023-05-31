@@ -9,6 +9,7 @@ pnpm run docs:build  #然后执行打包命令
 # 进入待发布的目录
 cd docs/.vitepress/dist  #进到dist目录
 
+rm -rf .git  #删除git文件
 git init  #执行这些git命令
 git add -A
 git commit -m 'deploy'
