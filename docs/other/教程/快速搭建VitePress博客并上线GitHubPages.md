@@ -124,4 +124,9 @@ export default defineConfig({
 node deploy.sh
 ```
 
+## 资源
+
+- [VitePress](https://vitepress.dev/)
+- [vitepress搭建文档库、博客](http://www.520wsl.com/course/blog/vitepress/vitepress%E6%90%AD%E5%BB%BA%E6%96%87%E6%A1%A3%E5%BA%93%E3%80%81%E5%8D%9A%E5%AE%A2.html)
+
 完结。

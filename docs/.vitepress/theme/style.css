@@ -89,3 +89,7 @@
   --docsearch-primary-color: var(--vp-c-brand) !important;
 }
 
+.VPImage.image-src {
+  border-radius: 50%;
+  border: 8px solid rgba(255, 255, 255, 0.5);
+}

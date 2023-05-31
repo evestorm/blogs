@@ -123,7 +123,7 @@ export default defineConfig({
     ],
 
     lastUpdatedText: '上次更新',
-    outlineTitle: '目录',
+    outlineTitle: '本页目录',
 
     // 上一个和下一个链接上方显示的文本
     docFooter: {

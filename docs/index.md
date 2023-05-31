@@ -6,6 +6,9 @@ hero:
   name: "Lance's blog"
   text: "Front-end developer and iOS developer"
   tagline: 佛系敲码，认真干饭
+  image:
+    src: /kitten.jpg
+    alt: kitten
   actions:
     - theme: brand
       text: 面试指南
