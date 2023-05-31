@@ -26,8 +26,8 @@ export default defineConfig({
         text: '前端',
         activeMatch: '^/frontend/',
         items: [
-          { text: 'HTML', link: '/frontend/html/基础/元素' },
-          { text: 'CSS', link: '/frontend/css/基础/CSS引入方式' },
+          { text: 'HTML', link: '/frontend/html/HTML基础汇总' },
+          { text: 'CSS', link: '/frontend/css/CSS基础汇总' },
           // { text: 'JavaScript', link: '/frontend/js/JavaScript基础知识' },
         ]
       },
