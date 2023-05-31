@@ -262,7 +262,7 @@ import { useData } from 'vitepress';
 const { page } = useData();
 </script>
 
-<pre class="bg-light-blue">
+<pre class="pre-theme">
 访问网站以及页面的数据：
 {{ page }}
 </pre>
@@ -270,8 +270,9 @@ const { page } = useData();
 <hello-world />
 
 <style>
-.bg-light-blue {
-  background-color: lightblue;
+.pre-theme {
+  background-color: yellow;
+  color: black;
 }
 </style>
 ```
@@ -285,7 +286,7 @@ import { useData } from 'vitepress';
 const { page } = useData();
 </script>
 
-<pre class="bg-light-blue">
+<pre class="pre-theme">
 访问网站以及页面的数据：
 {{ page }}
 </pre>
@@ -293,8 +294,9 @@ const { page } = useData();
 <hello-world />
 
 <style>
-.bg-light-blue {
-  background-color: lightblue;
+.pre-theme {
+  background-color: yellow;
+  color: black;
 }
 </style>
 
