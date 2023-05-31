@@ -96,6 +96,208 @@ export default defineConfig({
 }
 ```
 
+### 本站搜索
+
+`themeConfig` 中配置如下：
+
+```js
+export default defineConfig({
+  themeConfig: {
+    search: {
+      provider: 'local', // 本地搜索 // [!code focus]
+    },
+  }
+})
+```
+
+### 自定义容器
+
+```md
+::: tip
+这是个提示
+:::
+
+::: warning
+这是个警告
+:::
+
+::: danger
+这是个危险
+:::
+```
+
+这样写的效果对应为：
+
+::: tip
+这是个提示
+:::
+
+::: warning
+这是个警告
+:::
+
+::: danger
+这是个危险
+:::
+
+#### 自定义提示
+
+```md
+::: tip 提示标题
+这是个提示
+:::
+```
+
+::: tip 提示标题
+这是个提示
+:::
+
+### 代码块中的行高亮显示
+
+````
+```js{4}
+export default {
+  data () {
+    return {
+      msg: 'Highlighted!'
+    }
+  }
+}
+```
+````
+
+```js{4}
+export default {
+  data () {
+    return {
+      msg: 'Highlighted!'
+    }
+  }
+}
+```
+
+除了单行之外，还可以指定多个单行、范围或同时指定:
+
+- 行范围: 例如 `{5-8}，{3-10}，{10-17}`
+- 多个单行: 例如 `{4,7,9}`
+- 行范围和单行: 例如 `{4,7-13,16,23-27,40}`
+
+````
+```js{1,4,6-7}
+export default { // Highlighted
+  data () {
+    return {
+      msg: `Highlighted!
+      This line isn't highlighted,
+      but this and the next 2 are.`,
+      motd: 'VitePress is awesome',
+      lorem: 'ipsum',
+    }
+  }
+}
+```
+````
+
+```js{1,4,6-7}
+export default { // Highlighted
+  data () {
+    return {
+      msg: `Highlighted!
+      This line isn't highlighted,
+      but this and the next 2 are.`,
+      motd: 'VitePress is awesome',
+      lorem: 'ipsum',
+    }
+  }
+}
+```
+
+### 开启代码行号
+
+```js{3}
+export default defineConfig({
+  markdown: {
+    lineNumbers: true
+  }
+})
+```
+
+### 模板语法
+
+#### 插值
+
+每一个 Markdown 文件将首先被编译成 HTML，接着作为一个 Vue 组件传入 vue-loader，这意味着你可以在文本中使用 Vue 风格的插值：
+
+```vue
+{{ 1 + 1 }}
+```
+
+输出：
+
+{{ 2 }}
+
+#### 指令
+
+同样地，也可以使用指令:
+
+```html
+<ul>
+  <li v-for="i in 3" :key="i">{{ i }}</li>
+</ul>
+```
+
+输出：
+
+<ul>
+  <li v-for="i in 3" :key="i">{{ i }}</li>
+</ul>
+
+### `<script> & <style>` 以及使用组件
+
+```vue
+<script setup>
+import HelloWorld from '/components/HelloWorld.vue';
+
+import { useData } from 'vitepress';
+const { page } = useData();
+</script>
+
+<pre class="bg-light-blue">
+访问网站以及页面的数据：
+{{ page }}
+</pre>
+
+<hello-world />
+
+<style>
+.bg-light-blue {
+  background-color: lightblue;
+}
+</style>
+```
+
+输出：
+
+<script setup>
+import HelloWorld from '/components/HelloWorld.vue';
+
+import { useData } from 'vitepress';
+const { page } = useData();
+</script>
+
+<pre class="bg-light-blue">
+访问网站以及页面的数据：
+{{ page }}
+</pre>
+
+<hello-world />
+
+<style>
+.bg-light-blue {
+  background-color: lightblue;
+}
+</style>
+
 ## 部署到 GitHub Pages
 
 创建 GitHub 仓库。我的项目名为 `blogs`

@@ -33,11 +33,12 @@ export default defineConfig({
         text: '教程',
         activeMatch: '^/other/',
         items: [
-          { text: '搭建VitePress博客', link: '/other/教程/快速搭建VitePress博客并上线GitHubPages' }
+          { text: '博客搭建', link: '/other/教程/快速搭建VitePress博客并上线GitHubPages' }
         ]
       }
     ],
 
+    // 左侧侧边栏
     sidebar: {
       "/frontend/html/": [
         {
@@ -84,7 +85,7 @@ export default defineConfig({
           text: '教程',
           items: [
             {
-              text: '快速搭建VitePress博客并上线GitHubPages',
+              text: 'VitePress博客搭建',
               link: '/other/教程/快速搭建VitePress博客并上线GitHubPages'
             },
           ]
@@ -92,31 +93,13 @@ export default defineConfig({
       ]
     },
 
+    // 右侧文章大纲
     outline: [1, 6],
 
-    // sidebar: [
-    //   {
-    //     text: 'HTML',
-    //     items: [
-    //       {
-    //         text: '基础',
-    //         items: [
-    //           {
-    //             text: '元素',
-    //             link: '/frontend/html/基础/元素'
-    //           }
-    //         ]
-    //       },
-    //     ]
-    //   },
-    //   {
-    //     text: 'Examples',
-    //     items: [
-    //       { text: 'Markdown Examples', link: '/markdown-examples' },
-    //       { text: 'Runtime API Examples', link: '/api-examples' }
-    //     ]
-    //   }
-    // ],
+    // 搜索
+    search: {
+      provider: 'local'
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/evestorm' }
