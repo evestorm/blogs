@@ -74,6 +74,28 @@ features:
 
 配置见本博客仓库 `main` 分支的 `docs/.vitepress/config.ts` 中，导航栏和侧边栏的目录结构见 `docs/` 。`config.ts` 中的配置项基本都有注释，直接提取即可。
 
+### Logo 配置
+
+Logo 放进 `docs/public`, 浏览器 icon 和博客左上角 Logo 配置如下：
+
+```ts
+import { defineConfig } from 'vitepress';
+
+// https://vitepress.dev/reference/site-config
+export default defineConfig({
+  base: '/blogs/',
+  ...
+  // head 标签内容追加
+  head: [
+    ['link', { rel: 'icon', href: '/blogs/kitten.jpg' }] // [!code focus]
+  ],
+  themeConfig: {
+    logo: '/kitten.jpg', // 站点左侧logo // [!code focus]
+  }
+  ...
+}
+```
+
 ## 部署到 GitHub Pages
 
 创建 GitHub 仓库。我的项目名为 `blogs`
