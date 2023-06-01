@@ -28,7 +28,7 @@ export default defineConfig({
         items: [
           { text: 'HTML', link: '/frontend/html/HTML基础汇总' },
           { text: 'CSS', link: '/frontend/css/CSS基础汇总' },
-          // { text: 'JavaScript', link: '/frontend/js/JavaScript基础知识' },
+          { text: 'JavaScript', link: '/frontend/js/JavaScript基础汇总' },
         ]
       },
       {
@@ -49,6 +49,10 @@ export default defineConfig({
       "/frontend/css/": autoGetSidebarOptionBySrcDir(
         path.resolve(__dirname, "../frontend/css/"),
         "CSS"
+      ),
+      "/frontend/js/": autoGetSidebarOptionBySrcDir(
+        path.resolve(__dirname, "../frontend/js/"),
+        "JavaScript"
       ),
       "other/教程/": autoGetSidebarOptionBySrcDir(
         path.resolve(__dirname, "../other/教程/"),
