@@ -29,6 +29,7 @@ export default defineConfig({
           { text: 'HTML', link: '/frontend/html/HTML基础汇总' },
           { text: 'CSS', link: '/frontend/css/CSS基础汇总' },
           { text: 'JavaScript', link: '/frontend/js/JavaScript基础汇总' },
+          { text: '性能优化', link: '/frontend/performance/大屏性能优化' },
         ]
       },
       {
@@ -53,6 +54,10 @@ export default defineConfig({
       "/frontend/js/": autoGetSidebarOptionBySrcDir(
         path.resolve(__dirname, "../frontend/js/"),
         "JavaScript"
+      ),
+      "/frontend/performance/": autoGetSidebarOptionBySrcDir(
+        path.resolve(__dirname, "../frontend/performance/"),
+        "性能优化"
       ),
       "other/教程/": autoGetSidebarOptionBySrcDir(
         path.resolve(__dirname, "../other/教程/"),
