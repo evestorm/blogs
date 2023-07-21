@@ -1,7 +1,11 @@
+---
+date: 2022-07-14
+---
+
 # 转载-CSS粘住固定底部的5种方法
 
-- 译文地址：http://caibaojian.com/css-5-ways-sticky-footer.html
-- 原文地址：https://css-tricks.com/couple-takes-sticky-footer/
+- 译文地址：<http://caibaojian.com/css-5-ways-sticky-footer.html>
+- 原文地址：<https://css-tricks.com/couple-takes-sticky-footer/>
 - 译者：前端开发博客-Jack
 
 ### 方法一：全局增加一个负值下边距等于底部高度

@@ -13,7 +13,7 @@ export default defineConfig({
     ['link', { rel: 'icon', href: '/blogs/kitten.jpg' }]
   ],
   // 使用 git commit 获取时间戳。此选项允许默认主题显示页面的上次更新时间；通过 themeConfig.lastUpdatedText 选项自定义文本
-  lastUpdated: true,
+  lastUpdated: false,
   markdown: {
     lineNumbers: true, // 开启行号
   },

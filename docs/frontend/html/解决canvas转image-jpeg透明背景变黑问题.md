@@ -1,3 +1,7 @@
+---
+date: 2019-08-19
+---
+
 # 解决canvas转image/jpeg透明背景变黑问题
 
 ## 问题
@@ -174,7 +178,6 @@ ctx.putImageData(imgData, 0, 0);
 
 ![透明转白](/assets/解决canvas转image-jpeg透明背景变黑问题/tran2white.png);
 
-
 从图中可以看出这个方案是有缺陷的，当 png 图片上存在半透明区域时，也会将其填充为黑色。
 
 解决方案来源：[Change html canvas black background to white background when creating jpg image from png image](https://stackoverflow.com/questions/32160098/change-html-canvas-black-background-to-white-background-when-creating-jpg-image)
@@ -256,7 +259,6 @@ ctx.fillRect(0, 0, canvas.width, canvas.height);
 效果：
 
 ![设置前设置白色背景](/assets/解决canvas转image-jpeg透明背景变黑问题/pre2white.png);
-
 
 显然，在 canvas 绘制前填充白色背景这种方法，不仅简单，而且对 png 图片的半透明区域填充难看的黑色块。推荐这种解决方案。
 

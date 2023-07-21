@@ -1,3 +1,7 @@
+---
+date: 2023-01-14
+---
+
 # 快速搭建VitePress博客并上线GitHubPages
 
 ## 介绍

@@ -111,7 +111,7 @@ Object.defineProperty(window, 'undefined', {
 });
 ```
 
-![undefined](/assets/javaScript基础/undefined.png)
+![undefined](/assets/JavaScript基础/undefined.png)
 
 ```jsx
 function test() {
@@ -124,7 +124,7 @@ function test() {
 test();
 ```
 
-![undefined2](/assets/javaScript基础/undefined2.png)
+![undefined2](/assets/JavaScript基础/undefined2.png)
 
 拓展
 

@@ -1,3 +1,9 @@
+---
+date: 2021-05-29
+---
+
+# Photoshop如何生成多页PDF
+
 来源：<http://blog.sina.com.cn/s/blog_146b3a65e0102yemg.html>
 
 <!-- more -->

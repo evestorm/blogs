@@ -1,3 +1,7 @@
+---
+date: 2023-05-27
+---
+
 ## 简介
 
 ### 原子化 CSS
@@ -194,7 +198,7 @@ Tailwind CSS 提供了 `@apply` 语法来帮助我们实现：
 
 这样未来维护时，不仅样式的修改变得更加容易，内容区也会变得更好维护。
 
-关于样式复用的更多信息，可参考：https://tailwindcss.com/docs/reusing-styles
+关于样式复用的更多信息，可参考：<https://tailwindcss.com/docs/reusing-styles>
 
 **提示**
 
@@ -234,7 +238,7 @@ div {
 
 Tailwind CSS 认为，所有不使用其变量的值都为魔法值。比如上方的代码，完全可以使用 1px solid #e5e7eb 来实现，但是未来如果要对颜色进行统一调整，这行代码将无法达到预期效果。
 
-具体可参考文档：https://tailwindcss.com/docs/functions-and-directives#theme
+具体可参考文档：<https://tailwindcss.com/docs/functions-and-directives#theme>
 
 #### 使用 Tailwind 配置之外的变量
 
@@ -271,7 +275,7 @@ div {
 
 尽管这种方法可以优雅地解决问题，但这种魔法值的方案并不被推荐，因为事实上，这种做法会让样式体系超出规范的范围。如果项目中充斥着这种代码，会给后期的维护造成困难。
 
-参考文档：https://tailwindcss.com/docs/adding-custom-styles#using-arbitrary-values
+参考文档：<https://tailwindcss.com/docs/adding-custom-styles#using-arbitrary-values>
 
 #### 全面且好用的响应式方案
 
@@ -304,9 +308,9 @@ div {
 Tailwind CSS 响应式的规则为：
 
 1. `mobile first` ，即移动端优先，你也可以理解为，什么断点都不设置就相当于断点为0
-2. 断点的含义是大于等于，即 `min-width` ，而非 `max-width` 。具体可参考文档：https://tailwindcss.com/docs/responsive-design#targeting-mobile-screens
+2. 断点的含义是大于等于，即 `min-width` ，而非 `max-width` 。具体可参考文档：<https://tailwindcss.com/docs/responsive-design#targeting-mobile-screens>
 
-> 具体响应式断点可参考文档：https://tailwindcss.com/docs/screens
+> 具体响应式断点可参考文档：<https://tailwindcss.com/docs/screens>
 
 **高级用法**
 
@@ -336,7 +340,7 @@ module.exports = {
 <div class="w-32 h-32 bg-blue-500 dark:bg-green-500"></div>
 ```
 
-更多使用方法可参考文档：https://tailwindcss.com/docs/dark-mode
+更多使用方法可参考文档：<https://tailwindcss.com/docs/dark-mode>
 
 #### 重写/覆盖 Tailwind 配置
 
@@ -357,8 +361,7 @@ module.exports = {
 <span class="text-disabled">禁用色</span> /
 ```
 
-配置太多，就不赘述了，具体可参考：https://github.com/tailwindlabs/tailwindcss/blob/master/stubs/defaultConfig.stub.js
-
+配置太多，就不赘述了，具体可参考：<https://github.com/tailwindlabs/tailwindcss/blob/master/stubs/defaultConfig.stub.js>
 
 ## 资源
 
@@ -366,7 +369,7 @@ module.exports = {
 - [Tailwind 组件库（部分收费）](https://tailwindcomponents.com/)
 - [Tailwind Awesome(收费)](https://www.tailwindawesome.com/)
 
-### 文章摘录自：
+### 文章摘录自
 
 - [快速掌握 Tailwind：最流行的原子化 CSS 框架](https://juejin.cn/post/7231539903649398843)
 - [TailwindCSS的使用，看这一篇就够了！](https://zhengxiaoping.xyz/fullstack/TailwindCSS%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7.html)
