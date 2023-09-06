@@ -29,6 +29,7 @@ export default defineConfig({
           { text: 'HTML', link: '/frontend/html/HTML基础汇总' },
           { text: 'CSS', link: '/frontend/css/CSS基础汇总' },
           { text: 'JavaScript', link: '/frontend/js/JavaScript基础汇总' },
+          { text: '框架', link: '/frontend/framework/Vue/解决innerHTML设置的class不生效问题' },
           { text: '性能优化', link: '/frontend/performance/大屏性能优化' },
         ]
       },
@@ -54,6 +55,10 @@ export default defineConfig({
       "/frontend/js/": autoGetSidebarOptionBySrcDir(
         path.resolve(__dirname, "../frontend/js/"),
         "JavaScript"
+      ),
+      "/frontend/framework/": autoGetSidebarOptionBySrcDir(
+        path.resolve(__dirname, "../frontend/framework/"),
+        "框架"
       ),
       "/frontend/performance/": autoGetSidebarOptionBySrcDir(
         path.resolve(__dirname, "../frontend/performance/"),
