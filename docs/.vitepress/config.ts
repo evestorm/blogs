@@ -37,7 +37,8 @@ export default defineConfig({
         text: '教程',
         activeMatch: '^/other/',
         items: [
-          { text: '博客搭建', link: '/other/教程/快速搭建VitePress博客并上线GitHubPages' }
+          { text: '博客搭建', link: '/other/教程/快速搭建VitePress博客并上线GitHubPages' },
+          { text: 'SD-webui安装', link: '/other/AI/Mac-M1安装stable-diffusion-webui'}
         ]
       }
     ],
@@ -67,6 +68,10 @@ export default defineConfig({
       "other/教程/": autoGetSidebarOptionBySrcDir(
         path.resolve(__dirname, "../other/教程/"),
         "教程"
+      ),
+      "other/AI/": autoGetSidebarOptionBySrcDir(
+        path.resolve(__dirname, "../other/AI/"),
+        "AI"
       )
     },
 
