@@ -10,10 +10,10 @@ hero:
         alt: kitten
     actions:
         - theme: brand
-          text: 微信：EVE_Lance
+          text: wx：EVE_Lance
           link: #
         - theme: brand
-          text: 扣扣：1572534835
+          text: qq：1572534835
           link: #
 
 features:

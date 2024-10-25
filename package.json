@@ -10,6 +10,7 @@
   },
   "scripts": {
     "deploy": "bash deploy.sh",
+    "watch": "chokidar 'markdown/**/*.md' -c 'pnpm run dev'",
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview"

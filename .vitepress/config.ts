@@ -52,5 +52,5 @@ export default defineConfig({
   // vite: {
   //   optimizeDeps: {},
   //   plugins: []
-  // }
+  // },
 })
