@@ -16,7 +16,7 @@ date: 2023-11-09
 
 ## 2. 修改HOSTS
 
-这里我们需要修改 HOSTS
+这里我们需要修改 HOSTS:
 
 ```shell
 sudo vi /etc/hosts
@@ -29,4 +29,4 @@ sudo vi /etc/hosts
 20.205.243.166 raw.githubusercontent.com
 ```
 
-最后 `:wq` 保存
+最后 `:wq` 保存就好了
