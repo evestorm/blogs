@@ -25,5 +25,8 @@
   },
   "dependencies": {
     "@yicode/yidocs-auto": "^1.6.3"
+  },
+  "volta": {
+    "node": "20.18.1"
   }
 }
